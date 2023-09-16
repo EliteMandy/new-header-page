@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+}
+
+.headr_main{
+    height: 75px;
+    width: 100%;
+}
+.aboutt{
+    display:flex;
+    background-color: rgb(210, 65, 45);
+    height:40px;
+    width: 100%;
+}
+.piccs > div {
+    display: inline-block; /* or display: flex; */
+    margin: 15px; /* Optional margin to add space between the divs */
+    padding-left: 10px;
+
+}
+.piccs #ministryofcoal{
+    border-right: 2px solid rgba(68, 65, 65, 0.5);
+}
+.piccs #otherpic div{
+    display: inline-block; /* or display: flex; */
+    margin: 15px; /* Optional margin to add space between the divs */
+    padding-left: 10px;
+}
+.piccs{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.piccs .separate{
+    background-color: black;
+    height: 100%px;
+    width:0.5px;
+    overflow: hidden;
+}
+#ministryofcoal img{
+   mix-blend-mode: lighten;
+}
+/*LANGUAGE SELECTOR*/
+#language{
+    display: inline-block;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance:none;
+  }
+  select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  /*ABOUT US WALA DIV*/
+.aboutt{
+    display: inline-block;
+    display: flex;
+    padding-left: 70px;
+    /* justify-content: center;
+    justify-items: center; */
+}
+
+
+
+
+/* Style the navigation bar */
+nav {
+    background-color: rgb(210, 65, 45);
+    padding: 10px;
+}
+
+/* Style the navigation list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style the navigation list items */
+li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* Style the links */
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+/* Change link color on hover */
+a:hover {
+    text-decoration: underline white;
+}
+
+/* Style the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(210, 65, 45);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown items */
+.dropdown-content li {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.container {
+    display: flex;
+    position:relative;
+    width:100%;
+    display:grid;/*to show the grid and display flex to show the flex container*/
+    grid-template-columns: 3fr 5fr;
+  }
+  
+  .left, .right {
+    position:relative;
+    height: 100%;
+    
+    /* Add any styles you want for the individual divs here */
+  }
+  .left{
+
+    background-color: rgba(82, 82, 204, 0.818);
+  }
+  .right{
+    background-color: rgba(202, 58, 58, 0.768);
+  }
